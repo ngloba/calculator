@@ -9,12 +9,12 @@ public class BaseTestJunit {
     protected static Calculator calculator;
 
     @BeforeClass
-    public void setUp() {
+    public static void setUp() {
         calculator = new Calculator();
     }
 
     @AfterClass
-    public void tearDown() {
+    public static void tearDown() {
         calculator = null;
     }
 
