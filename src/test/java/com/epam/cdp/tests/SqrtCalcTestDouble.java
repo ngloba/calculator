@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class SqrtCalcTestDouble extends BaseTest {
 
-    @Test(dataProvider = "valuesForSqrtTestDouble")
+    @Test(dataProvider = "valuesForSqrtTestDouble", groups = "double")
     public void sqrtCalcTestDouble (double a, double expectedResult) {
         double result = calculator.sqrt(a);
         Assert.assertEquals(result, expectedResult);

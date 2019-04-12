@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 public class SubCalcTest extends BaseTest {
 
 
-@Test(dataProvider = "valuesForSubTest")
+@Test(dataProvider = "valuesForSubTest", groups = "long")
     public void twoMinusOne (long a, long b, long expectedValue) {
 long result = calculator.sub(a,b);
     Assert.assertTrue(result == expectedValue);

@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class SubCalcTestDouble extends BaseTest{
 
-    @Test(dataProvider = "valuesForSubTestDouble")
+    @Test(dataProvider = "valuesForSubTestDouble", groups = "double")
     public void subTestDouble (double a, double b, double expectedValue) {
         double result = calculator.sub(a, b);
         Assert.assertTrue(result == expectedValue);

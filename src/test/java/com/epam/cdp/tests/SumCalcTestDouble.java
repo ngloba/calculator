@@ -8,7 +8,7 @@ import java.text.DecimalFormat;
 
 public class SumCalcTestDouble extends BaseTest{
 
-    @Test(dataProvider = "valuesForSumTestDouble")
+    @Test(dataProvider = "valuesForSumTestDouble", groups = "double")
     public void sumTestDouble (double a, double b, double expectedValue) {
         double result = calculator.sum(a, b);
         DecimalFormat df = new DecimalFormat("###,#");

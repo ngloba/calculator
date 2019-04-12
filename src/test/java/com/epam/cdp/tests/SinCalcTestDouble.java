@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class SinCalcTestDouble extends BaseTest {
 
-    @Test(dataProvider = "values")
+    @Test(dataProvider = "values", groups = "double")
     public void sinCalcTestDouble (double a, double expectedResult){
         double result = calculator.sin(a);
         Assert.assertEquals(Math.floor(result), Math.floor(expectedResult));

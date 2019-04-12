@@ -8,7 +8,7 @@ public class SumCalcTest extends BaseTest {
 
 
 
-    @Test (dataProvider = "valuesForSumTest")
+    @Test (groups = "long", dataProvider = "valuesForSumTest")
     public void onePlusTwoTest (long a, long b, long expectedValue) {
        long result =  calculator.sum(a, b);
         Assert.assertEquals(result, expectedValue, "Wrong result");

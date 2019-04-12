@@ -1,17 +1,37 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Demo Suite">
-    <listeners>
-        <listener class-name="com.epam.cdp.listeners.TestListeners"/>
-    </listeners>
-    <test name="Sub Cal Test">
-        <classes>
-            <class name="com.epam.cdp.tests.SubCalcTest"/>
-        </classes>
-    </test>
-    <test name="Sum Cal Test">
-        <classes>
-            <class name="com.epam.cdp.tests.SumCalcTest"/>
-        </classes>
-    </test>
 
+    <test name="All">
+        <groups>
+            <run>
+                <include name="long"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="com.epam.cdp.tests.CosCalcTestDouble"/>
+            <class name="com.epam.cdp.tests.PowCalcTestDouble"/>
+            <class name="com.epam.cdp.tests.SinCalcTestDouble"/>
+            <class name="com.epam.cdp.tests.SqrtCalcTestDouble"/>
+            <class name="com.epam.cdp.tests.SubCalcTest"/>
+            <class name="com.epam.cdp.tests.SubCalcTestDouble"/>
+            <class name="com.epam.cdp.tests.SumCalcTest"/>
+            <class name="com.epam.cdp.tests.SumCalcTestDouble"/>
+            <class name="com.epam.cdp.tests.TgCalcTestDouble"/>
+            <class name="com.epam.cdp.tests.CtgCalcTestDouble"/>
+            <class name="com.epam.cdp.tests.DivCalcTest"/>
+            <class name="com.epam.cdp.tests.DivCalcTestDouble"/>
+            <class name="com.epam.cdp.tests.IsNegativeCalcTest"/>
+            <class name="com.epam.cdp.tests.IsPositiveCalcTest"/>
+            <class name="com.epam.cdp.tests.MultCalcTest"/>
+            <class name="com.epam.cdp.tests.MultCalcTestDouble"/>
+
+
+        </classes>
+
+
+
+
+
+    </test>
 </suite>
